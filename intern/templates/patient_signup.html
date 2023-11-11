@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signup</title>
+    <!-- Add your CSS styling or link to external stylesheets here -->
+</head>
+<body>
+
+<h2>User Signup</h2>
+
+<form method="post" >
+    {% csrf_token %}
+
+    <!-- First Name -->
+    <label for="id_first_name">First Name:</label>
+    <input type="text" name="first_name" required>
+    <br>
+
+    <!-- Last Name -->
+    <label for="id_last_name">Last Name:</label>
+    <input type="text" name="last_name" required>
+    <br>
+
+    <!-- Profile Picture -->
+    <label for="id_profile_picture">Profile Picture:</label>
+    <input type="file" name="profile_picture">
+    <br>
+
+    <!-- Username -->
+    <label for="id_username">Username:</label>
+    <input type="text" name="username" required>
+    <br>
+
+    <!-- Email -->
+    <label for="id_email">Email:</label>
+    <input type="email" name="email" required>
+    <br>
+
+    <!-- Password -->
+    <label for="id_password">Password:</label>
+    <input type="password" name="password" required>
+    <br>
+
+    <!-- Confirm Password -->
+    <label for="id_confirm_password">Confirm Password:</label>
+    <input type="password" name="confirm_password" required>
+    <br>
+
+    <!-- Address -->
+    <label for="id_address_line1">Address Line 1:</label>
+    <input type="text" name="address_line1" required>
+    <br>
+
+    <label for="id_city">City:</label>
+    <input type="text" name="city" required>
+    <br>
+
+    <label for="id_state">State:</label>
+    <input type="text" name="state" required>
+    <br>
+
+    <label for="id_pincode">Pincode:</label>
+    <input type="text" name="pincode" required>
+    <br>
+
+    <button type="submit">Sign Up</button>
+</form>
+
+</body>
+</html>
